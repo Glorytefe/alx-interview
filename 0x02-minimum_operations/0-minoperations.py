@@ -14,20 +14,13 @@ def minOperations(n):
     if n < 2:
         return 0
 
-    paste = 1
-    min = 2
-    count = 2
+    min_operations = 0
+    factor = 2
 
-    while count < n:
-        bal = n - count
-        if bal % min:
-            min += 1
-            count += paste
-        else:
-            paste = count
-            count += paste
-            min += 2
-    if count == n:
-        return min
-    else:
-        return 0
+    while n > 1:
+        while n % factor == 0:
+            min_operations += factor
+            n //= factor
+        factor += 1
+
+    return min_operations
