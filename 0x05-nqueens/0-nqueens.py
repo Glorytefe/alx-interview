@@ -15,7 +15,6 @@ N-Queens Problem
     - Time Complexity: O(n!) - where n is the number of queens.
         - Initially, there are n options for the first queen, n - 1 for the second, n - 2 for the third, and so on.
     - Space Complexity: O(n^2) - where n represents the board size.
-
 """
 
 import sys
