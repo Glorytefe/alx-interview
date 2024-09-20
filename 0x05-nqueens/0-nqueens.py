@@ -8,12 +8,15 @@ N-Queens Problem
         - Confirm no conflicts along the positive diagonal.
         - Confirm no conflicts along the negative diagonal.
     - Place the queen at the valid position on the board.
-    - If the configuration is valid, continue to the next row until the board is fully populated.
-    - If the configuration becomes invalid, backtrack and explore alternative placements.
+    - If the configuration is valid, continue to the next
+      row until the board is fully populated.
+    - If the configuration becomes invalid, backtrack and
+      explore alternative placements.
     - Record the valid configuration if the end of the board is reached.
 - Complexity Analysis:
     - Time Complexity: O(n!) - where n is the number of queens.
-        - Initially, there are n options for the first queen, n - 1 for the second, n - 2 for the third, and so on.
+        - Initially, there are n options for the first queen,
+        n - 1 for the second, n - 2 for the third, and so on.
     - Space Complexity: O(n^2) - where n represents the board size.
 """
 
