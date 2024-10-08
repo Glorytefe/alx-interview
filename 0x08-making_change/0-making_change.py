@@ -27,6 +27,7 @@ def makeChange(coins, total):
     # Dynamic programming approach to find the fewest coins
     for coin in coins:
         for amount in range(coin, total + 1):
-            min_coins[amount] = min(min_coins[amount], min_coins[amount - coin] + 1)
+            min_coins[amount] = min(min_coins[amount],
+                                    min_coins[amount - coin] + 1)
 
     return min_coins[total] if min_coins[total] != float('inf') else -1
