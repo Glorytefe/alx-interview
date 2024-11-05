@@ -1,11 +1,16 @@
 #!/usr/bin/python3
- 
+
+"""
+islanf perimeter
+"""
+
+
 def island_perimeter(grid):
     """
     Args:
         grid (list): A list of lists representing an island.
         0 - water, 1 - land
-    Returns: 
+    Returns:
         the perimeter of an island (grid).
     """
     height = len(grid)
